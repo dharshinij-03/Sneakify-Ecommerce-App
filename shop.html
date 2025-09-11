@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <h6 style="color: red;">New year sale 15% discount!!!..</h6>
+    </center>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#" style="font-family: fantasy;">Sneakify</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn nav-link p-0">
+                            <a href="cart.html"><img src="/images/favicon.ico" alt="Icon" width="45"></a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Register</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form style="max-width: 800px; margin: auto;">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Username:</label>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phonenumber" class="form-label">Phone No:</label>
+                            <input type="number" name="phonenumber" id="phonenumber" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                        <center>
+                            <button class="btn btn-primary mt-3">Submit</button>
+                        </center>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+        <div class="row width=10px">
+            <div class="col-sm-2 border border-secondary">
+                <h5 style="font-family: fantasy;">Filters</h5>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Size
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <form action="filters">
+                            <input type="radio" name="size" id="size">
+                            <label for="size">6</label><br>
+                            <input type="radio" name="size" id="size">
+                            <label for="size">6.5</label><br>
+
+                            <input type="radio" name="size" id="size">
+                            <label for="size">7</label><br>
+                            <input type="radio" name="size" id="size">
+                            <label for="size">7.5</label><br>
+
+                            <input type="radio" name="size" id="size">
+                            <label for="size">8</label><br>
+                            <input type="radio" name="size" id="size">
+                            <label for="size">8.5</label><br>
+
+                            <input type="radio" name="size" id="size">
+                            <label for="size">9</label><br>
+                            <input type="radio" name="size" id="size">
+                            <label for="size">9.5</label><br>
+
+                            <input type="radio" name="size" id="size">
+                            <label for="size">10</label><br>
+                            <input type="radio" name="size" id="size">
+                            <label for="size">10.5</label><br>
+
+                            <input type="radio" name="size" id="size">
+                            <label for="size">11</label><br>
+                            <input type="radio" name="size" id="size">
+                            <label for="size">11.5</label><br>
+
+
+                        </form>
+                    </div>
+                </div><br>
+
+                <p class="d-inline-flex gap-1">
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseprice" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Prices
+                    </a>
+                </p>
+                <div class="collapse" id="collapseprice">
+                    <div class="card card-body">
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                </div><br>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn " data-bs-toggle="collapse" href="#collapsebrand" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Brands
+                    </a>
+                </p>
+                <div class="collapse" id="collapsebrand">
+                    <div class="card card-body">
+                        <form action="brand">
+                            <input type="checkbox" name="brand" id="brand">
+                            <label for="brand">Nike</label><br>
+
+                            <input type="checkbox" name="brand" id="brand">
+                            <label for="brand">Puma</label><br>
+                        </form>
+                    </div>
+                </div><br>
+                <div>
+                    <center><button class="btn btn-danger">Apply Filters</button></center>
+                </div>
+
+            </div>
+            <div class="col-sm-10">
+                <div class="row">
+                    <div class="col">
+                        <div class="card ms-4 mb-4 mt-4 " id="product1" style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
+                            <div class="card-body">
+                                <center><a href="/product1.html" class="text-decoration-none fw-bold  text-dark">Adidas Originals Samba OG</a>
+                                </center>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="cart.html" class="btn border-secondary text-center">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card ms-4 mb-4 mt-4"  style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center " alt="...">
+                            <div class="card-body">
+                                <center><a href="/product1.html" class="text-decoration-none text-dark fw-bold">Adidas Originals Samba OG</a>
+                                </center>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="#" class="btn border-secondary">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card ms-4 mb-4 mt-4" style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
+                            <div class="card-body">
+                                <center><a href="/product1.html" class="text-decoration-none text-dark">adidas Originals Samba OG</a>
+                                </center>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="#" class="btn border-secondary">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card ms-4 mb-4 mt-4" style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
+                            <div class="card-body">
+                                <center><a href="/product1.html" class="text-decoration-none text-dark">adidas Originals Samba OG</a>
+                                </center>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="#" class="btn border-secondary">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card ms-4 mb-4" style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
+                            <div class="card-body">
+                                <center><a href="/product1.html" class="text-decoration-none text-dark">adidas Originals Samba OG</a>
+                                </center>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="#" class="btn border-secondary">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card ms-4 mb-4" type="button" style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
+                            <div class="card-body">
+                                <center><a href="/product1.html"></a>Adidas Originals Samba OG</a>
+                                </center>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="#" class="btn border-secondary">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card ms-4 mb-4" style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
+                            <div class="card-body">
+                                <center><a href="/product1.html" class="text-decoration-none text-dark">adidas Originals Samba OG</a>
+                                </center>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="#" class="btn border-secondary">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card ms-4 mb-4" style="width: 18rem;">
+                            <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
+                            <div class="card-body">
+                                <p class="text-center">adidas Originals Samba OG</p>
+                                <center>
+                                    <p class="card-text">£95.00</p>
+                                </center><br>
+                                <center> <a href="#" class="btn border-secondary">Add to cart</a></center> <br>
+                                <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="text-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </center>
+
+            <footer class="bg-dark text-white text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <!-- About Section -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <h5 class="text-uppercase">About Us</h5>
+                            <p>
+                                Sneakify is a specially designed for you sneakers and popular brands ,luxury,comfortable sneakers.
+                            </p>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <h5 class="text-uppercase">Quick Links</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                                <li><a href="#" class="text-white text-decoration-none">Register</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <h5 class="text-uppercase">Contact</h5>
+                            <p>Email: sneakify@mail.com</p>
+                            <p>Phone: +91 12345 67890</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2025 Your Website. All rights reserved.
+                </div>
+            </footer>
+
+
+</body>
+
+</html>
