@@ -55,8 +55,8 @@
                 <div class="modal-body">
                     <form style="max-width: 800px; margin: auto;">
                         <div class="form-group">
-                            <label for="name" class="form-label">Username:</label>
-                            <input type="text" name="name" id="name" class="form-control">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" name="username" id="username" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="email" class="form-label">Email:</label>
@@ -83,83 +83,72 @@
         </div>
     </div>
     <div class="container-fluid">
-
         <div class="row width=10px">
             <div class="col-sm-2 border border-secondary">
                 <h5 style="font-family: fantasy;">Filters</h5>
                 <p class="d-inline-flex gap-1">
-                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseSize" role="button" aria-expanded="false" aria-controls="collapseSize">
                         Size
                     </a>
                 </p>
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="collapseSize">
                     <div class="card card-body">
                         <form action="filters">
-                            <input type="radio" name="size" id="size">
-                            <label for="size">6</label><br>
-                            <input type="radio" name="size" id="size">
-                            <label for="size">6.5</label><br>
-
-                            <input type="radio" name="size" id="size">
-                            <label for="size">7</label><br>
-                            <input type="radio" name="size" id="size">
-                            <label for="size">7.5</label><br>
-
-                            <input type="radio" name="size" id="size">
-                            <label for="size">8</label><br>
-                            <input type="radio" name="size" id="size">
-                            <label for="size">8.5</label><br>
-
-                            <input type="radio" name="size" id="size">
-                            <label for="size">9</label><br>
-                            <input type="radio" name="size" id="size">
-                            <label for="size">9.5</label><br>
-
-                            <input type="radio" name="size" id="size">
-                            <label for="size">10</label><br>
-                            <input type="radio" name="size" id="size">
-                            <label for="size">10.5</label><br>
-
-                            <input type="radio" name="size" id="size">
-                            <label for="size">11</label><br>
-                            <input type="radio" name="size" id="size">
-                            <label for="size">11.5</label><br>
-
-
+                            <input type="radio" name="size" id="size6">
+                            <label for="size6">6</label><br>
+                            <input type="radio" name="size" id="size6_5">
+                            <label for="size6_5">6.5</label><br>
+                            <input type="radio" name="size" id="size7">
+                            <label for="size7">7</label><br>
+                            <input type="radio" name="size" id="size7_5">
+                            <label for="size7_5">7.5</label><br>
+                            <input type="radio" name="size" id="size8">
+                            <label for="size8">8</label><br>
+                            <input type="radio" name="size" id="size8_5">
+                            <label for="size8_5">8.5</label><br>
+                            <input type="radio" name="size" id="size9">
+                            <label for="size9">9</label><br>
+                            <input type="radio" name="size" id="size9_5">
+                            <label for="size9_5">9.5</label><br>
+                            <input type="radio" name="size" id="size10">
+                            <label for="size10">10</label><br>
+                            <input type="radio" name="size" id="size10_5">
+                            <label for="size10_5">10.5</label><br>
+                            <input type="radio" name="size" id="size11">
+                            <label for="size11">11</label><br>
+                            <input type="radio" name="size" id="size11_5">
+                            <label for="size11_5">11.5</label><br>
                         </form>
                     </div>
                 </div><br>
-
                 <p class="d-inline-flex gap-1">
-                    <a class="btn " data-bs-toggle="collapse" href="#collapseprice" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn " data-bs-toggle="collapse" href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">
                         Prices
                     </a>
                 </p>
-                <div class="collapse" id="collapseprice">
+                <div class="collapse" id="collapsePrice">
                     <div class="card card-body">
                         <input type="range" class="form-range" id="customRange1">
                     </div>
                 </div><br>
                 <p class="d-inline-flex gap-1">
-                    <a class="btn " data-bs-toggle="collapse" href="#collapsebrand" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseBrand" role="button" aria-expanded="false" aria-controls="collapseBrand">
                         Brands
                     </a>
                 </p>
-                <div class="collapse" id="collapsebrand">
+                <div class="collapse" id="collapseBrand">
                     <div class="card card-body">
                         <form action="brand">
-                            <input type="checkbox" name="brand" id="brand">
-                            <label for="brand">Nike</label><br>
-
-                            <input type="checkbox" name="brand" id="brand">
-                            <label for="brand">Puma</label><br>
+                            <input type="checkbox" name="brand" id="brandNike">
+                            <label for="brandNike">Nike</label><br>
+                            <input type="checkbox" name="brand" id="brandPuma">
+                            <label for="brandPuma">Puma</label><br>
                         </form>
                     </div>
                 </div><br>
                 <div>
                     <center><button class="btn btn-danger">Apply Filters</button></center>
                 </div>
-
             </div>
             <div class="col-sm-10">
                 <div class="row">
@@ -176,7 +165,6 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card ms-4 mb-4 mt-4"  style="width: 18rem;">
@@ -191,7 +179,6 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card ms-4 mb-4 mt-4" style="width: 18rem;">
@@ -206,7 +193,6 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card ms-4 mb-4 mt-4" style="width: 18rem;">
@@ -221,7 +207,6 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card ms-4 mb-4" style="width: 18rem;">
@@ -236,13 +221,12 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card ms-4 mb-4" type="button" style="width: 18rem;">
                             <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
                             <div class="card-body">
-                                <center><a href="/product1.html"></a>Adidas Originals Samba OG</a>
+                                <center><a href="/product1.html" class="text-decoration-none text-dark">Adidas Originals Samba OG</a>
                                 </center>
                                 <center>
                                     <p class="card-text">£95.00</p>
@@ -251,7 +235,6 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card ms-4 mb-4" style="width: 18rem;">
@@ -266,13 +249,12 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
                     </div>
                     <div class="col">
                         <div class="card ms-4 mb-4" style="width: 18rem;">
                             <img src="/images/Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpeg" class="card-img-center" alt="...">
                             <div class="card-body">
-                                <p class="text-center">adidas Originals Samba OG</p>
+                                <center><p class="text-center">adidas Originals Samba OG</p></center>
                                 <center>
                                     <p class="card-text">£95.00</p>
                                 </center><br>
@@ -280,8 +262,6 @@
                                 <center> <a href="#" class="btn btn-danger">Buy Now</a></center>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -298,19 +278,15 @@
                     </nav>
                 </div>
             </center>
-
             <footer class="bg-dark text-white text-center text-lg-start">
                 <div class="container p-4">
                     <div class="row">
-                        <!-- About Section -->
                         <div class="col-lg-4 col-md-6 mb-4">
                             <h5 class="text-uppercase">About Us</h5>
                             <p>
-                                Sneakify is a specially designed for you sneakers and popular brands ,luxury,comfortable sneakers.
+                                Sneakify is a specially designed for you sneakers and popular brands, luxury, comfortable sneakers.
                             </p>
                         </div>
-
-
                         <div class="col-lg-4 col-md-6 mb-4">
                             <h5 class="text-uppercase">Quick Links</h5>
                             <ul class="list-unstyled mb-0">
@@ -327,14 +303,10 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                     © 2025 Your Website. All rights reserved.
+                    <p>Developed by DHARSHINI J</p>
                 </div>
             </footer>
-
-
 </body>
-
 </html>
